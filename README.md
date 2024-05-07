@@ -21,9 +21,9 @@ This is basically a step by step getting an image named rocky up and running. If
 ```bash
 distrobox create --name rocky --image quay.io/toolbx-images/rockylinux-toolbox:8
 distrobox enter rocky
-sudo dnf install alsa-lib apr apr-util fontconfig freetype libglvnd libglvnd-egl libglvnd-glx libglvnd-opengl libgomp librsvg2 libXcursor libXfixes libXi libXinerama libxkbcommon-x11 libXrandr libXrender libXtst libXxf86vm mesa-libGLU mtdev pulseaudio-libs xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm alsa-plugins-pulseaudio
-unzip DaVinci_Resolve_18.6.4_Linux.zip
-./DaVinci_Resolve_18.6.4_Linux.run --appimage-extract
+sudo dnf install alsa-lib apr apr-util fontconfig freetype libglvnd libglvnd-egl libglvnd-glx libglvnd-opengl libgomp librsvg2 libXcursor libXfixes libXi libXinerama libxkbcommon-x11 libXrandr libXrender libXtst libXxf86vm mesa-libGLU mtdev pulseaudio-libs xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm alsa-plugins-pulseaudio xcb-util-cursor
+unzip DaVinci_Resolve_19.0b2_Linux.zip
+./DaVinci_Resolve_19.0b2_Linux.run --appimage-extract
 sudo QT_QPA_PLATFORM=minimal squashfs-root/AppRun -i -a -y
 
 
